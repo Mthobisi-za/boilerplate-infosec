@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 5000;
 app.disable("x-powered-by")
 app.use(helmet())
 app.get('/', (req, res) => {
-    res.render('/views/index.html')
+    res.json({ fine: 'fine' })
 })
 
 
